@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sazón & Fuego | Restaurante</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded">
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="#" class="logo">
+        <span class="material-symbols-rounded">restaurant</span>
+        Sazón & Fuego
+    </a>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a class="btn-reserva" href="#contacto">
+        <span class="material-symbols-rounded">calendar_month</span>
+        Reservar
+    </a>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <span class="etiqueta">
+                Cocina que enamora
+            </span>
+
+            <h1>
+                Sabores que convierten<br>
+                momentos en recuerdos
+            </h1>
+
+            <p>
+                Ingredientes frescos, recetas especiales y una experiencia
+                creada para disfrutar cada plato.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="btn-primary">
+                    Ver nuestro menú
+                    <span class="material-symbols-rounded">
+                        arrow_forward
+                    </span>
+                </a>
+
+                <a href="#contacto" class="btn-secondary">
+                    Reservar mesa
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INFORMACIÓN -->
+
+    <section class="info">
+
+        <div class="info-card">
+            <span class="material-symbols-rounded">schedule</span>
+
+            <div>
+                <strong>Horario</strong>
+                <p>Lun - Dom · 12:00 PM - 11:00 PM</p>
+            </div>
+        </div>
+
+
+        <div class="info-card">
+            <span class="material-symbols-rounded">location_on</span>
+
+            <div>
+                <strong>Ubicación</strong>
+                <p>Centro de la ciudad</p>
+            </div>
+        </div>
+
+
+        <div class="info-card">
+            <span class="material-symbols-rounded">call</span>
+
+            <div>
+                <strong>Reservas</strong>
+                <p>+57 300 000 0000</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- MENÚ -->
+
+    <section class="menu-section" id="menu">
+
+        <div class="section-title">
+
+            <span>NUESTRO MENÚ</span>
+
+            <h2>Platos favoritos</h2>
+
+            <p>
+                Una selección de nuestros platos más pedidos.
+            </p>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+            <!-- Plato 1 -->
+
+            <article class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80"
+                    alt="Costillas BBQ">
+
+                <div class="food-content">
+
+                    <div class="food-header">
+                        <h3>Costillas BBQ</h3>
+                        <strong>$38.000</strong>
+                    </div>
+
+                    <p>
+                        Costillas cocinadas lentamente con nuestra salsa BBQ
+                        de la casa y papas rústicas.
+                    </p>
+
+                    <button onclick="pedir('Costillas BBQ')">
+                        <span class="material-symbols-rounded">
+                            shopping_bag
+                        </span>
+                        Pedir
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Plato 2 -->
+
+            <article class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80"
+                    alt="Pizza artesanal">
+
+                <div class="food-content">
+
+                    <div class="food-header">
+                        <h3>Pizza Artesanal</h3>
+                        <strong>$32.000</strong>
+                    </div>
+
+                    <p>
+                        Masa artesanal, mozzarella, tomate fresco y
+                        nuestros ingredientes seleccionados.
+                    </p>
+
+                    <button onclick="pedir('Pizza Artesanal')">
+                        <span class="material-symbols-rounded">
+                            shopping_bag
+                        </span>
+                        Pedir
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Plato 3 -->
+
+            <article class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80"
+                    alt="Hamburguesa">
+
+                <div class="food-content">
+
+                    <div class="food-header">
+                        <h3>Fuego Burger</h3>
+                        <strong>$28.000</strong>
+                    </div>
+
+                    <p>
+                        Carne artesanal, queso, vegetales frescos,
+                        salsa especial y papas.
+                    </p>
+
+                    <button onclick="pedir('Fuego Burger')">
+                        <span class="material-symbols-rounded">
+                            shopping_bag
+                        </span>
+                        Pedir
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- NOSOTROS -->
+
+    <section class="nosotros" id="nosotros">
+
+        <div class="nosotros-text">
+
+            <span class="mini-title">NUESTRA HISTORIA</span>
+
+            <h2>
+                Buena comida.<br>
+                Buenos momentos.
+            </h2>
+
+            <p>
+                En Sazón & Fuego creemos que un buen plato puede reunir
+                personas y crear momentos inolvidables.
+            </p>
+
+            <p>
+                Trabajamos con ingredientes seleccionados y preparamos
+                cada pedido pensando en ofrecer sabor, calidad y una
+                excelente experiencia.
+            </p>
+
+        </div>
+
+
+        <img
+            src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=80"
+            alt="Restaurante">
+
+    </section>
+
+
+    <!-- CONTACTO -->
+
+    <section class="contacto" id="contacto">
+
+        <span class="material-symbols-rounded">
+            restaurant_menu
+        </span>
+
+        <h2>¿Listo para disfrutar?</h2>
+
+        <p>
+            Reserva tu mesa o realiza tu pedido directamente con nosotros.
+        </p>
+
+        <a
+            href="https://wa.me/573000000000"
+            target="_blank"
+            class="whatsapp">
+
+            <span class="material-symbols-rounded">chat</span>
+
+            Pedir por WhatsApp
+
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        Sazón & Fuego
+    </div>
+
+    <p>
+        © 2026 Sazón & Fuego · Todos los derechos reservados
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
